@@ -2,9 +2,12 @@
   "values" : [ "main" ],
   "name" : "Branch"
 }, {
-  "values" : [ "d49f43e6763c578fa8f2f97f845365e0e5934b4e" ],
+  "values" : [ "2a45444500d5f43272c99ab1d3f51e299c120a8c" ],
   "name" : "Commit"
 }, {
-  "values" : [ "chrome" ],
+  "values" : [ "" ],
   "name" : "Browser"
+}, {
+  "values" : [ "" ],
+  "name" : "Stage"
 } ]

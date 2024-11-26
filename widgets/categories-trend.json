@@ -1,4 +1,9 @@
 [ {
+  "buildOrder" : 4,
+  "reportUrl" : "https://manikosto.github.io/focking-automation-docker/",
+  "reportName" : "Allure Report",
+  "data" : { }
+}, {
   "buildOrder" : 3,
   "reportUrl" : "https://manikosto.github.io/focking-automation-docker/",
   "reportName" : "Allure Report",

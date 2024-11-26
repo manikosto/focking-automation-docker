@@ -2,26 +2,26 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "Create and post new content for all roles",
-    "uid" : "9f4f49a5a9f64f28",
+    "uid" : "acc1d03793d2b99f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1732643410088,
-      "stop" : 1732643418142,
-      "duration" : 8054
+      "start" : 1732643815486,
+      "stop" : 1732643823304,
+      "duration" : 7818
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "'I'm ADMIN'", "'admin'" ]
   }, {
     "name" : "Create post",
-    "uid" : "b011a399ff364021",
+    "uid" : "277647284996f367",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1732643419067,
-      "stop" : 1732643422181,
-      "duration" : 3114
+      "start" : 1732643824272,
+      "stop" : 1732643826971,
+      "duration" : 2699
     },
     "flaky" : false,
     "newFailed" : false,
