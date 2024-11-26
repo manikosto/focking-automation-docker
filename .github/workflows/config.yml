@@ -1,6 +1,8 @@
 name: UI Tests
 
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: "30 17 * * *"
 
 jobs:
   ui-tests:
