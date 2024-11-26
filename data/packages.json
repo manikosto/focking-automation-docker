@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "tests.user_tests.test_example",
+    "children" : [ {
+      "name" : "Create and post new content for all roles",
+      "uid" : "44d6f76ef1fd69d6",
+      "parentUid" : "6687269c8e11e66a1764e4a7d7079400",
+      "status" : "passed",
+      "time" : {
+        "start" : 1732643070040,
+        "stop" : 1732643077992,
+        "duration" : 7952
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'I'm ADMIN'", "'admin'" ]
+    }, {
+      "name" : "Create post",
+      "uid" : "aee28b54fa4ca9a7",
+      "parentUid" : "6687269c8e11e66a1764e4a7d7079400",
+      "status" : "failed",
+      "time" : {
+        "start" : 1732643078928,
+        "stop" : 1732643082165,
+        "duration" : 3237
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'I'm ADMIN'", "'admin'" ]
+    } ],
+    "uid" : "tests.user_tests.test_example"
+  } ],
+  "name" : "packages"
+}

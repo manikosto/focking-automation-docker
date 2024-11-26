@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Тема' == 2",
+      "children" : [ {
+        "name" : "Create post",
+        "uid" : "aee28b54fa4ca9a7",
+        "parentUid" : "00a4bbb0f06e1d1bae37477087ac09f0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1732643078928,
+          "stop" : 1732643082165,
+          "duration" : 3237
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'I'm ADMIN'", "'admin'" ]
+      } ],
+      "uid" : "00a4bbb0f06e1d1bae37477087ac09f0"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

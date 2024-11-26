@@ -1,0 +1,43 @@
+{
+  "05b3f6d2208bc9cb1280b456aa0ade5d" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aee28b54fa4ca9a7",
+      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/aee28b54fa4ca9a7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'Тема' == 2",
+      "time" : {
+        "start" : 1732643078928,
+        "stop" : 1732643082165,
+        "duration" : 3237
+      }
+    } ]
+  },
+  "3b85a746ec9c7992b66887ecc41ff016" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "44d6f76ef1fd69d6",
+      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/44d6f76ef1fd69d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1732643070040,
+        "stop" : 1732643077992,
+        "duration" : 7952
+      }
+    } ]
+  }
+}
