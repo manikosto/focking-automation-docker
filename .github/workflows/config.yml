@@ -22,8 +22,8 @@ jobs:
           mkdir -p allure-results
           echo "Branch=${GITHUB_REF_NAME}" > allure-results/environment.properties
           echo "Commit=${GITHUB_SHA}" >> allure-results/environment.properties
-          echo "Browser=${BROWSER}" >> allure-results/environment.properties
-          echo "Stage=${STAGE}" >> allure-results/environment.properties
+          echo "Browser=${{ vars.BROWSER }}" >> allure-results/environment.properties
+          echo "Stage=${{ vars.STAGE }}" >> allure-results/environment.properties
           echo "{\"name\": \"GitHub Actions\", \"type\": \"github\", \"url\": \"${{ github.server_url }}/${{ github.repository }}\", \"buildOrder\": ${{ github.run_number }}, \"buildName\": \"${{ github.run_id }}\", \"buildUrl\": \"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\", \"reportUrl\": \"https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/\", \"reportName\": \"Allure Report\"}" > allure-results/executor.json
 
       # Шаг 3 - Запуск тестов
