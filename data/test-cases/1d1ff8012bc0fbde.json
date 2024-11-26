@@ -1,0 +1,257 @@
+{
+  "uid" : "1d1ff8012bc0fbde",
+  "name" : "Create and post new content for all roles",
+  "fullName" : "tests.user_tests.test_example.TestExample#test_create_and_post_new_content_for_all_roles",
+  "historyId" : "3b85a746ec9c7992b66887ecc41ff016",
+  "time" : {
+    "start" : 1732644415568,
+    "stop" : 1732644423740,
+    "duration" : 8172
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestExample",
+    "time" : {
+      "start" : 1732644415567,
+      "stop" : 1732644415567,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1732644414737,
+      "stop" : 1732644415566,
+      "duration" : 829
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open page: https://demo.opensource-socialnetwork.org/login",
+      "time" : {
+        "start" : 1732644415568,
+        "stop" : 1732644416288,
+        "duration" : 720
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Login as admin",
+      "time" : {
+        "start" : 1732644416288,
+        "stop" : 1732644418277,
+        "duration" : 1989
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Write new post",
+      "time" : {
+        "start" : 1732644418277,
+        "stop" : 1732644418641,
+        "duration" : 364
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "aafea0f2ad9177a8",
+        "name" : "example",
+        "source" : "aafea0f2ad9177a8.png",
+        "type" : "image/png",
+        "size" : 272145
+      } ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "'I'm ADMIN'"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Post",
+      "time" : {
+        "start" : 1732644418641,
+        "stop" : 1732644418739,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestExample::0",
+    "time" : {
+      "start" : 1732644423747,
+      "stop" : 1732644423747,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1732644423748,
+      "stop" : 1732644423831,
+      "duration" : 83
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.user_tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_example"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestExample"
+  }, {
+    "name" : "host",
+    "value" : "32d9959a487a"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.user_tests.test_example"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "message",
+    "value" : "'I'm ADMIN'"
+  }, {
+    "name" : "role",
+    "value" : "'admin'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "33d36f8b3421b9fb",
+        "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/33d36f8b3421b9fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1732643999901,
+          "stop" : 1732644008298,
+          "duration" : 8397
+        }
+      }, {
+        "uid" : "acc1d03793d2b99f",
+        "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/acc1d03793d2b99f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1732643815486,
+          "stop" : 1732643823304,
+          "duration" : 7818
+        }
+      }, {
+        "uid" : "9f4f49a5a9f64f28",
+        "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/9f4f49a5a9f64f28",
+        "status" : "passed",
+        "time" : {
+          "start" : 1732643410088,
+          "stop" : 1732643418142,
+          "duration" : 8054
+        }
+      }, {
+        "uid" : "445eef8d4eb8bae",
+        "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/445eef8d4eb8bae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1732643242972,
+          "stop" : 1732643250885,
+          "duration" : 7913
+        }
+      }, {
+        "uid" : "44d6f76ef1fd69d6",
+        "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/44d6f76ef1fd69d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1732643070040,
+          "stop" : 1732643077992,
+          "duration" : 7952
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1d1ff8012bc0fbde.json",
+  "parameterValues" : [ "'I'm ADMIN'", "'admin'" ]
+}
