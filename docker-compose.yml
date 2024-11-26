@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  tests:
+    image: registry.gitlab.com/none8785702/focking-automation-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/workspace
+    command: >
+      /bin/sh -c "STAGE=$$STAGE BROWSER=$$BROWSER pytest -sv -o log_cli=true --alluredir=allure-results --junitxml=test-results.xml"
+    working_dir: /usr/workspace
+    environment:
+      BROWSER: ${BROWSER:-chrome}
+      STAGE: ${STAGE:-dev}
+    tty: true
+
+
+  report:
+    image: registry.gitlab.com/none8785702/focking-automation-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/workspace
+    command: >
+      /bin/sh -c "echo "Branch=$CI_COMMIT_REF_NAME" > allure-results/environment.properties &&
+      echo "Commit=$CI_COMMIT_SHORT_SHA" >> allure-results/environment.properties &&
+      echo "Browser=$BROWSER" >> allure-results/environment.properties &&
+      allure generate allure-results --clean -o allure-report"
+    working_dir: /usr/workspace
