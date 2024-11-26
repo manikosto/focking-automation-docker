@@ -1,20 +1,20 @@
 [ {
-  "uid" : "b9ad7574dac5fa56",
+  "uid" : "b011a399ff364021",
   "name" : "Create post",
   "time" : {
-    "start" : 1732643251830,
-    "stop" : 1732643254472,
-    "duration" : 2642
+    "start" : 1732643419067,
+    "stop" : 1732643422181,
+    "duration" : 3114
   },
-  "status" : "failed",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "445eef8d4eb8bae",
+  "uid" : "9f4f49a5a9f64f28",
   "name" : "Create and post new content for all roles",
   "time" : {
-    "start" : 1732643242972,
-    "stop" : 1732643250885,
-    "duration" : 7913
+    "start" : 1732643410088,
+    "stop" : 1732643418142,
+    "duration" : 8054
   },
   "status" : "passed",
   "severity" : "normal"
