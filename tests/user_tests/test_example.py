@@ -76,4 +76,3 @@ class TestExample(BaseTest):
         self.home_page.post()
         if role == "admin":
             self.home_page.mark_post_as_admin()
-        assert "Тема" == 2
