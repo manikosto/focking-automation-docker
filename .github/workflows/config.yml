@@ -1,36 +1,47 @@
 name: UI Tests
 
-on: [push]
+on:
+  workflow_dispatch:
+    inputs:
+      BROWSER:
+        description: "Select the browser"
+        required: true
+        default: "chrome"
+        options:
+          - "chrome"
+          - "firefox"
+          - "safari"
+      STAGE:
+        description: "Select the stage"
+        required: true
+        default: "dev1"
+        options:
+          - "dev1"
+          - "dev2"
+          - "test"
 
 jobs:
   ui-tests:
     runs-on: ubuntu-latest
+
     steps:
-      # Копирование репозитория из main на runner
+      # Клонируем репозиторий
       - uses: actions/checkout@v2
 
-      # Шаг 1 - Копируем gh-pages на раннер
-      - name: Copy gh-pages repo to runner
-        uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-          path: ./.github/gh-pages
-
-      # Шаг 2 - Подготовка окружения в Allure-отчете
+      # Подготовка environment.properties
       - name: Prepare Allure environment
         run: |
           mkdir -p allure-results
-          echo "Branch=${GITHUB_REF_NAME}" > allure-results/environment.properties
-          echo "Commit=${GITHUB_SHA}" >> allure-results/environment.properties
-          echo "Browser=${{ vars.BROWSER }}" >> allure-results/environment.properties
-          echo "Stage=${{ vars.STAGE }}" >> allure-results/environment.properties
-          echo "{\"name\": \"GitHub Actions\", \"type\": \"github\", \"url\": \"${{ github.server_url }}/${{ github.repository }}\", \"buildOrder\": ${{ github.run_number }}, \"buildName\": \"${{ github.run_id }}\", \"buildUrl\": \"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\", \"reportUrl\": \"https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/\", \"reportName\": \"Allure Report\"}" > allure-results/executor.json
+          echo "Branch=${{ github.ref_name }}" > allure-results/environment.properties
+          echo "Commit=${{ github.sha }}" >> allure-results/environment.properties
+          echo "Browser=${{ inputs.BROWSER }}" >> allure-results/environment.properties
+          echo "Stage=${{ inputs.STAGE }}" >> allure-results/environment.properties
 
-      # Шаг 3 - Запуск тестов
+      # Запуск тестов
       - name: Run tests via docker-compose
         env:
-          BROWSER: ${{ vars.BROWSER }}
-          STAGE: ${{ vars.STAGE }}
+          BROWSER: ${{ inputs.BROWSER }}
+          STAGE: ${{ inputs.STAGE }}
         run: |
           docker compose up tests
 
