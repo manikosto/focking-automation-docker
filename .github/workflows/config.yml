@@ -1,18 +1,18 @@
 name: UI Tests
 
 on:
-  workflow_dispatch:
-    inputs:
+  workflow_dispatch: # Включает ручной запуск workflow
+    inputs: # Описание параметров для dropdown
       BROWSER:
-        description: "Select the browser"
-        required: true
-        default: "chrome"
-        options:
+        description: "Select the browser" # Описание параметра
+        required: true # Обязательный параметр
+        default: "chrome" # Значение по умолчанию
+        options: # Возможные значения для выбора
           - "chrome"
           - "firefox"
           - "safari"
       STAGE:
-        description: "Select the stage"
+        description: "Select the environment stage"
         required: true
         default: "dev1"
         options:
