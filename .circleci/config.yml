@@ -41,11 +41,18 @@ jobs:
               echo "No history to restore"
             fi
       - run:
+          name: Get CircleCI Job ID
+          command: |
+            curl -H "Circle-Token: ${CIRCLECI_API_TOKEN}" "https://circleci.com/api/v2/workflow/${CIRCLE_WORKFLOW_ID}/job" > jobs.json
+            JOB_ID=$(cat jobs.json | jq -r '.items[] | select(.name=="run_tests").id') # Предполагаем, что название вашего job 'run_tests'
+            echo "export CIRCLE_JOB_ID=$JOB_ID" >> $BASH_ENV
+            source $BASH_ENV
+      - run:
           name: Setup Allure env variables
           command: |
             echo "Branch=$CIRCLE_BRANCH" > allure-results/environment.properties
             echo "Commit=$CIRCLE_SHA1" >> allure-results/environment.properties
-            echo "{\"name\": \"CircleCI\", \"type\": \"circleci\", \"url\": \"${CIRCLE_REPOSITORY_URL}\", \"buildOrder\": ${CIRCLE_BUILD_NUM}, \"buildName\": \"${CIRCLE_BRANCH}\", \"buildUrl\": \"${CIRCLE_BUILD_URL}\", \"reportUrl\": \"https://output.circle-artifacts.com/output/job/${CIRCLE_BUILD_URL}/artifacts/0/allure-report/index.html\", \"reportName\": \"Отчет о тестировании\"}" > allure-results/executor.json
+            echo "{\"name\": \"CircleCI\", \"type\": \"circleci\", \"url\": \"$CIRCLE_REPOSITORY_URL\", \"buildOrder\": $CIRCLE_BUILD_NUM, \"buildName\": \"$CIRCLE_BRANCH\", \"buildUrl\": \"$CIRCLE_BUILD_URL\", \"reportUrl\": \"https://output.circle-artifacts.com/output/job/${CIRCLE_JOB_ID}/artifacts/0/allure-report/index.html\", \"reportName\": \"Отчет о тестировании\"}" > allure-results/executor.json
       - run:
           name: Generate Allure report
           command: |
