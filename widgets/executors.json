@@ -1,10 +1,1 @@
-[ {
-  "name" : "GitHub Actions",
-  "type" : "github",
-  "url" : "https://github.com/manikosto/focking-automation-docker",
-  "buildOrder" : 6,
-  "buildName" : "12036470325",
-  "buildUrl" : "https://github.com/manikosto/focking-automation-docker/actions/runs/12036470325",
-  "reportName" : "Allure Report",
-  "reportUrl" : "https://manikosto.github.io/focking-automation-docker/"
-} ]
+[ ]

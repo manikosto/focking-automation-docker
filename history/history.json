@@ -1,68 +1,20 @@
 {
   "05b3f6d2208bc9cb1280b456aa0ade5d" : {
     "statistic" : {
-      "failed" : 2,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 6
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "c87a202db8a9a6b3",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/c87a202db8a9a6b3",
+      "uid" : "f665b1630b0e4bd8",
       "status" : "passed",
       "time" : {
-        "start" : 1732644424685,
-        "stop" : 1732644427356,
-        "duration" : 2671
-      }
-    }, {
-      "uid" : "800f994142ffb836",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/800f994142ffb836",
-      "status" : "passed",
-      "time" : {
-        "start" : 1732644009248,
-        "stop" : 1732644012173,
-        "duration" : 2925
-      }
-    }, {
-      "uid" : "277647284996f367",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/277647284996f367",
-      "status" : "passed",
-      "time" : {
-        "start" : 1732643824272,
-        "stop" : 1732643826971,
-        "duration" : 2699
-      }
-    }, {
-      "uid" : "b011a399ff364021",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/b011a399ff364021",
-      "status" : "passed",
-      "time" : {
-        "start" : 1732643419067,
-        "stop" : 1732643422181,
-        "duration" : 3114
-      }
-    }, {
-      "uid" : "b9ad7574dac5fa56",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/b9ad7574dac5fa56",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert 'Тема' == 2",
-      "time" : {
-        "start" : 1732643251830,
-        "stop" : 1732643254472,
-        "duration" : 2642
-      }
-    }, {
-      "uid" : "aee28b54fa4ca9a7",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/aee28b54fa4ca9a7",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert 'Тема' == 2",
-      "time" : {
-        "start" : 1732643078928,
-        "stop" : 1732643082165,
-        "duration" : 3237
+        "start" : 1732960146741,
+        "stop" : 1732960149689,
+        "duration" : 2948
       }
     } ]
   },
@@ -71,63 +23,17 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 6
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "1d1ff8012bc0fbde",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/1d1ff8012bc0fbde",
+      "uid" : "654a276f89ae3209",
       "status" : "passed",
       "time" : {
-        "start" : 1732644415568,
-        "stop" : 1732644423740,
-        "duration" : 8172
-      }
-    }, {
-      "uid" : "33d36f8b3421b9fb",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/33d36f8b3421b9fb",
-      "status" : "passed",
-      "time" : {
-        "start" : 1732643999901,
-        "stop" : 1732644008298,
-        "duration" : 8397
-      }
-    }, {
-      "uid" : "acc1d03793d2b99f",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/acc1d03793d2b99f",
-      "status" : "passed",
-      "time" : {
-        "start" : 1732643815486,
-        "stop" : 1732643823304,
-        "duration" : 7818
-      }
-    }, {
-      "uid" : "9f4f49a5a9f64f28",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/9f4f49a5a9f64f28",
-      "status" : "passed",
-      "time" : {
-        "start" : 1732643410088,
-        "stop" : 1732643418142,
-        "duration" : 8054
-      }
-    }, {
-      "uid" : "445eef8d4eb8bae",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/445eef8d4eb8bae",
-      "status" : "passed",
-      "time" : {
-        "start" : 1732643242972,
-        "stop" : 1732643250885,
-        "duration" : 7913
-      }
-    }, {
-      "uid" : "44d6f76ef1fd69d6",
-      "reportUrl" : "https://manikosto.github.io/focking-automation-docker//#testresult/44d6f76ef1fd69d6",
-      "status" : "passed",
-      "time" : {
-        "start" : 1732643070040,
-        "stop" : 1732643077992,
-        "duration" : 7952
+        "start" : 1732960137339,
+        "stop" : 1732960145839,
+        "duration" : 8500
       }
     } ]
   }

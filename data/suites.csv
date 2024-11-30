@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Nov 26 18:06:55 GMT 2024","Tue Nov 26 18:07:03 GMT 2024","8172","tests.user_tests","test_example","TestExample","","","Create and post new content for all roles",""
-"passed","Tue Nov 26 18:07:04 GMT 2024","Tue Nov 26 18:07:07 GMT 2024","2671","tests.user_tests","test_example","TestExample","","","Create post",""
+"passed","Sat Nov 30 09:49:06 GMT 2024","Sat Nov 30 09:49:09 GMT 2024","2948","tests.user_tests","test_example","TestExample","","","Create post",""
+"passed","Sat Nov 30 09:48:57 GMT 2024","Sat Nov 30 09:49:05 GMT 2024","8500","tests.user_tests","test_example","TestExample","","","Create and post new content for all roles",""

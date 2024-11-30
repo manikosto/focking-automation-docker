@@ -1,35 +1,3 @@
 [ {
-  "buildOrder" : 6,
-  "reportUrl" : "https://manikosto.github.io/focking-automation-docker/",
-  "reportName" : "Allure Report",
   "data" : { }
-}, {
-  "buildOrder" : 5,
-  "reportUrl" : "https://manikosto.github.io/focking-automation-docker/",
-  "reportName" : "Allure Report",
-  "data" : { }
-}, {
-  "buildOrder" : 4,
-  "reportUrl" : "https://manikosto.github.io/focking-automation-docker/",
-  "reportName" : "Allure Report",
-  "data" : { }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "https://manikosto.github.io/focking-automation-docker/",
-  "reportName" : "Allure Report",
-  "data" : { }
-}, {
-  "buildOrder" : 2,
-  "reportUrl" : "https://manikosto.github.io/focking-automation-docker/",
-  "reportName" : "Allure Report",
-  "data" : {
-    "Product defects" : 1
-  }
-}, {
-  "buildOrder" : 1,
-  "reportUrl" : "https://manikosto.github.io/focking-automation-docker/",
-  "reportName" : "Allure Report",
-  "data" : {
-    "Product defects" : 1
-  }
 } ]
